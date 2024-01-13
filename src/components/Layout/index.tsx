@@ -2,7 +2,7 @@ import Head from "next/head";
 import styled from "@emotion/styled";
 
 import Header from "@/components/Layout/Header";
-import Footer from "@/components/Layout/Footer";
+// import Footer from "@/components/Layout/Footer";
 
 type Props = {
   children: React.ReactNode;
