@@ -319,7 +319,7 @@ const HomePage: NextPageWithLayout = () => {
           <Section1 />
 
           {/* 업무 경력 2*/}
-          <Section2 />
+          {/* <Section2 /> */}
         </MainBlock>
       </Container>
     </>

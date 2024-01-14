@@ -154,6 +154,9 @@ const Section1 = () => {
           </WorkExplainBlock>
 
           <ul>
+            <JobHistory>
+              프로젝트의 관리 및 명확한 타입정의를 위해 Typescript 활용.
+            </JobHistory>
             <JobHistory>react-auth를 활용한 Sign 기능 구현</JobHistory>
             <JobHistory>
               Chart.Js를 활용한 유저유입 및 transaction 트레킹 Chart구현
@@ -162,9 +165,11 @@ const Section1 = () => {
               선택한 날짜별 데이터 표출을 위해 커스텀 DatePicker 달력 기능 구현
             </JobHistory>
             <JobHistory>
+              Status별 스타일을 위해 Color Mapping Function 적용.
+            </JobHistory>
+            <JobHistory>
               Build 및 성능 개선을 위해 Code Splitting(Dynamic Import) 적용.
             </JobHistory>
-            <JobHistory></JobHistory>
           </ul>
         </WorkDescBlock>
       </WorkExpBlock>
@@ -185,10 +190,16 @@ const Section1 = () => {
 
           <ul>
             <JobHistory>
-              자사 코인인 플레이댑 코인 및 이더리움, 솔라나 네트워크 연결.
+              프로젝트의 관리 및 명확한 타입정의를 위해 Typescript 활용.
             </JobHistory>
             <JobHistory>
-              Meta Mask, Torus, Coinbase, Portis Wallet 연동.
+              대규모 이미지 로딩 이슈를 대비한 Lazy Loading 적용.
+            </JobHistory>
+            <JobHistory>
+              react-slick을 활용한 NFT 판매상품 캐러셀 구현.
+            </JobHistory>
+            <JobHistory>
+              각 해상도(웹, 테블릿, 모바일) 반응형 디자인 구현.
             </JobHistory>
           </ul>
         </WorkDescBlock>
@@ -213,7 +224,7 @@ const Section1 = () => {
 
           <ul>
             <JobHistory>
-              자사 코인인 플레이댑 코인 및 이더리움, 솔라나 네트워크 연결.
+              프로젝트의 관리 및 명확한 타입정의를 위해 Typescript 활용.
             </JobHistory>
             <JobHistory>
               자사 코인인 플레이댑 코인 및 이더리움, 솔라나 네트워크 연결.
@@ -230,6 +241,34 @@ const Section1 = () => {
             <JobHistory>
               유저 유입, 나라별 통계 & 페이지 잔류시간의 통계를 위해 Google
               Analytics 적용.
+            </JobHistory>
+          </ul>
+        </WorkDescBlock>
+      </WorkExpBlock>
+
+      <WorkExpBlock>
+        <WorkBlock>
+          <SubTitle>드래곤 블러드</SubTitle>
+          <SubTitle>사전예약 페이지</SubTitle>
+        </WorkBlock>
+
+        <WorkDescBlock>
+          <WorkExplainBlock>
+            <p>게임 서비스를 통한 사전예약 페이지 개발.</p>
+            <p>(서비스 종료)</p>
+          </WorkExplainBlock>
+
+          <ul>
+            <JobHistory>
+              Custom Video Tag를 활용한 케릭터별 영상 재생 및 캐릭터별 효과음
+              재생 기능 구현.
+            </JobHistory>
+            <JobHistory>emotion Js를 활용한 사이트 디자인 구현</JobHistory>
+            <JobHistory>
+              react-auery & axios를 활용한 사전예약 버튼 기능 구현
+            </JobHistory>
+            <JobHistory>
+              웹, 테블릿, 모바일 별, 시각화 및 디자인 반응형 적용
             </JobHistory>
           </ul>
         </WorkDescBlock>
