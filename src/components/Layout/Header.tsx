@@ -6,10 +6,18 @@ const Container = styled.div`
   width: 100%;
   padding: 2rem 3rem;
   background-color: lightcoral;
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 const Title = styled.h1`
   margin: 0;
+
+  @media screen and (max-width: 768px) {
+    margin: auto;
+  }
 `;
 
 const Header = () => {

@@ -196,7 +196,7 @@ const ImageBlock = styled.div`
     height: 160px;
     border-radius: 8px;
     margin-right: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -268,11 +268,17 @@ const HomePage: NextPageWithLayout = () => {
               <SkillItem>TypeScript</SkillItem>
               <SkillItem>Next.JS</SkillItem>
               <SkillItem>React.JS</SkillItem>
+              <SkillItem>Redux</SkillItem>
+              <SkillItem>GraphQL</SkillItem>
               <SkillItem>HTML / CSS</SkillItem>
               <SkillItem>Emotion.JS</SkillItem>
               <SkillItem>Styled-Component</SkillItem>
+              <SkillItem>Chart.Js</SkillItem>
+              <SkillItem>Git / GitHub</SkillItem>
               <SkillItem>Vercel</SkillItem>
+              <SkillItem>Amplify</SkillItem>
               <SkillItem>Netlify</SkillItem>
+              <SkillItem>JIRA</SkillItem>
             </SkillsBlock>
           </Section>
 
