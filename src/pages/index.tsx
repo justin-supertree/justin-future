@@ -247,6 +247,7 @@ const HomePage: NextPageWithLayout = () => {
                 글로벌 블록체인 회사 SuperTree(PlayDapp)에서 웹 프론트엔드
                 포지션으로 근무중입니다.
               </IntroText>
+              <br />
               <IntroText>
                 활발한 성격과 여러 환경에서 얻은 아이디어를 베이스로 더욱 더
                 새롭고, 일상생활에 보다 더 편리함을 가져다 줄 수 있는 서비스를
@@ -285,7 +286,7 @@ const HomePage: NextPageWithLayout = () => {
                 <p>Position</p>
                 <p>Web FrontEnd Developer</p>
               </BorderDownBlock>
-              <BorderDownBlock></BorderDownBlock>
+              {/* <BorderDownBlock>aa</BorderDownBlock> */}
             </PersonalBlock>
 
             <WorkExpBlock>
