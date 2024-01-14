@@ -24,6 +24,10 @@ const MainSection = styled.div`
 
 const MainBlock = styled.div`
   padding: 1rem 2.5rem;
+
+  @media screen and (max-width: 763px) {
+    padding: 1rem;
+  }
 `;
 
 const Layout = ({ children }: Props) => {
