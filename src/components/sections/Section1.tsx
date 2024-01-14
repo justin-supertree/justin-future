@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { useMedia } from "react-use";
 
 const Section = styled.section`
   display: flex;
@@ -121,6 +122,8 @@ const SubTitle = styled.p`
 `;
 
 const Section1 = () => {
+  const isMobile = useMedia(`(max-width:768px)`, true);
+
   return (
     <Section>
       <PersonalBlock>
@@ -140,10 +143,16 @@ const Section1 = () => {
       </PersonalBlock>
 
       <WorkExpBlock>
-        <WorkBlock>
-          <SubTitle>Members </SubTitle>
-          <SubTitle>BackOffice</SubTitle>
-        </WorkBlock>
+        {isMobile ? (
+          <WorkBlock>
+            <SubTitle>Members BackOffice</SubTitle>
+          </WorkBlock>
+        ) : (
+          <WorkBlock>
+            <SubTitle>Members </SubTitle>
+            <SubTitle>BackOffice</SubTitle>
+          </WorkBlock>
+        )}
 
         <WorkDescBlock>
           <WorkExplainBlock>
@@ -247,11 +256,16 @@ const Section1 = () => {
       </WorkExpBlock>
 
       <WorkExpBlock>
-        <WorkBlock>
-          <SubTitle>드래곤 블러드</SubTitle>
-          <SubTitle>사전예약 페이지</SubTitle>
-        </WorkBlock>
-
+        {isMobile ? (
+          <WorkBlock>
+            <SubTitle>드래곤 블러드 사전예약 페이지</SubTitle>
+          </WorkBlock>
+        ) : (
+          <WorkBlock>
+            <SubTitle>드래곤 블러드</SubTitle>
+            <SubTitle>사전예약 페이지</SubTitle>
+          </WorkBlock>
+        )}
         <WorkDescBlock>
           <WorkExplainBlock>
             <p>게임 서비스를 통한 사전예약 페이지 개발.</p>

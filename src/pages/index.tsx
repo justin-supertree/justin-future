@@ -234,7 +234,7 @@ const ContactWrapper = styled.div`
 `;
 
 const HomePage: NextPageWithLayout = () => {
-  const isMobile = useMedia("max-width:768px", true);
+  const isMobile = useMedia(`(max-width:768px)`, true);
 
   return (
     <>
