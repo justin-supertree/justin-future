@@ -5,6 +5,9 @@ import Image from "next/image";
 import { MyThumbNail, MyThumbNail2 } from "@/images";
 import { useMedia } from "react-use";
 
+import Section2 from "@/components/sections/Section2";
+import Section1 from "@/components/sections/Section1";
+
 const Container = styled.div`
   display: flex;
   align-items: flex-start;
@@ -304,58 +307,17 @@ const HomePage: NextPageWithLayout = () => {
               <SkillItem>Amplify</SkillItem>
               <SkillItem>Netlify</SkillItem>
               <SkillItem>JIRA</SkillItem>
+              <SkillItem>Google Analytics</SkillItem>
             </SkillsBlock>
           </Section>
 
           <Topic>Work Experiences</Topic>
 
-          {/* 업무 경력 */}
-          <Section>
-            <PersonalBlock>
-              <Title>수퍼트리</Title>
-              <BorderDownBlock>
-                <p>Period</p>
-                <p>2021.06.25 ~</p>
-              </BorderDownBlock>
-              <BorderDownBlock>
-                <p>Position</p>
-                <p>Web FrontEnd Developer</p>
-              </BorderDownBlock>
-              {/* <BorderDownBlock>aa</BorderDownBlock> */}
-            </PersonalBlock>
+          {/* 업무 경력 1*/}
+          <Section1 />
 
-            <WorkExpBlock>
-              <WorkBlock>
-                <SubTitle>NFT 마켓</SubTitle>
-              </WorkBlock>
-
-              <WorkDescBlock>
-                <p>저는 마켓 플레이스에서 이러한 일들을 했습니다.</p>
-                <ul>
-                  <li>1</li>
-                  <li>2</li>
-                  <li>3</li>
-                  <li>4</li>
-                </ul>
-              </WorkDescBlock>
-            </WorkExpBlock>
-
-            <WorkExpBlock>
-              <WorkBlock>
-                <SubTitle>드래곤 블러드</SubTitle>
-              </WorkBlock>
-
-              <WorkDescBlock>
-                <p>저는 마켓 플레이스에서 이러한 일들을 했습니다.</p>
-                <ul>
-                  <li>1</li>
-                  <li>2</li>
-                  <li>3</li>
-                  <li>4</li>
-                </ul>
-              </WorkDescBlock>
-            </WorkExpBlock>
-          </Section>
+          {/* 업무 경력 2*/}
+          <Section2 />
         </MainBlock>
       </Container>
     </>
