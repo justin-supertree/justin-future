@@ -296,6 +296,8 @@ const HomePage: NextPageWithLayout = () => {
               <SkillItem>TypeScript</SkillItem>
               <SkillItem>Next.JS</SkillItem>
               <SkillItem>React.JS</SkillItem>
+              <SkillItem>react-query</SkillItem>
+              <SkillItem>axios</SkillItem>
               <SkillItem>Redux</SkillItem>
               <SkillItem>GraphQL</SkillItem>
               <SkillItem>HTML / CSS</SkillItem>

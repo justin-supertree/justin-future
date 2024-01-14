@@ -55,7 +55,7 @@ const WorkExpBlock = styled.div`
   justify-content: flex-start;
   flex-direction: row;
   width: 100%;
-  padding: 2rem;
+  padding: 2rem 1rem 2rem 2rem;
 
   @media screen and (max-width: 768px) {
     display: block;
@@ -74,9 +74,33 @@ const WorkDescBlock = styled.div`
   }
 `;
 
+const WorkExplainBlock = styled.div`
+  & > p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+
+  & > a {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: lightskyblue;
+    }
+  }
+`;
+
+const JobHistory = styled.li`
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  word-break: keep-all;
+`;
+
 const WorkBlock = styled.div`
   height: 100%;
-  padding-right: 2rem;
+  padding-right: 1rem;
 
   @media screen and (max-width: 768px) {
     padding-right: 0;
@@ -84,7 +108,7 @@ const WorkBlock = styled.div`
 `;
 
 const SubTitle = styled.p`
-  width: 120px;
+  width: 180px;
   margin: 0;
   font-size: 26px;
   font-weight: 700;
@@ -117,32 +141,96 @@ const Section1 = () => {
 
       <WorkExpBlock>
         <WorkBlock>
-          <SubTitle>NFT 마켓</SubTitle>
+          <SubTitle>Members </SubTitle>
+          <SubTitle>BackOffice</SubTitle>
         </WorkBlock>
 
         <WorkDescBlock>
-          <p>저는 마켓 플레이스에서 이러한 일들을 했습니다.</p>
+          <WorkExplainBlock>
+            <p>맴버스 서비스</p>
+            <a href="https://admin.membersplus.com/sign-in" target="_blank">
+              https://admin.membersplus.com/
+            </a>
+          </WorkExplainBlock>
+
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
+            <JobHistory>react-auth를 활용한 Sign 기능 구현</JobHistory>
+            <JobHistory>
+              Chart.Js를 활용한 유저유입 및 transaction 트레킹 Chart구현
+            </JobHistory>
+            <JobHistory>
+              선택한 날짜별 데이터 표출을 위해 커스텀 DatePicker 달력 기능 구현
+            </JobHistory>
+            <JobHistory>
+              Build 및 성능 개선을 위해 Code Splitting(Dynamic Import) 적용.
+            </JobHistory>
+            <JobHistory></JobHistory>
           </ul>
         </WorkDescBlock>
       </WorkExpBlock>
 
       <WorkExpBlock>
         <WorkBlock>
-          <SubTitle>드래곤 블러드</SubTitle>
+          <SubTitle>NFT 마켓 드롭스</SubTitle>
+          <p>(2022.08 - 2022.08)</p>
         </WorkBlock>
 
         <WorkDescBlock>
-          <p>저는 마켓 플레이스에서 이러한 일들을 했습니다.</p>
+          <WorkExplainBlock>
+            <p>Nft 판매 촉진 이벤트(드롭스) 진행을 위해 페이지를 제작.</p>
+            <a href="https://market.playdapp.com/drops" target="_blank">
+              https://market.playdapp.com/drops
+            </a>
+          </WorkExplainBlock>
+
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
+            <JobHistory>
+              자사 코인인 플레이댑 코인 및 이더리움, 솔라나 네트워크 연결.
+            </JobHistory>
+            <JobHistory>
+              Meta Mask, Torus, Coinbase, Portis Wallet 연동.
+            </JobHistory>
+          </ul>
+        </WorkDescBlock>
+      </WorkExpBlock>
+
+      <WorkExpBlock>
+        <WorkBlock>
+          <SubTitle>NFT 마켓 리뉴얼</SubTitle>
+          <p>(2022.04 - 2022.06)</p>
+        </WorkBlock>
+
+        <WorkDescBlock>
+          <WorkExplainBlock>
+            <p>
+              기존 v1 레거시 기술스택 및 2개로 분리되어있던 프로젝트를,
+              v2버전으로 통합 및 최신 기술스택으로 업데이트.
+            </p>
+            <a href="https://market.playdapp.com/" target="_blank">
+              https://market.playdapp.com/
+            </a>
+          </WorkExplainBlock>
+
+          <ul>
+            <JobHistory>
+              자사 코인인 플레이댑 코인 및 이더리움, 솔라나 네트워크 연결.
+            </JobHistory>
+            <JobHistory>
+              자사 코인인 플레이댑 코인 및 이더리움, 솔라나 네트워크 연결.
+            </JobHistory>
+            <JobHistory>
+              Meta Mask, Torus, Coinbase, Portis Wallet 연동.
+            </JobHistory>
+            <JobHistory>
+              web3, Ethers, Next js version 기술스택을 최신상태로 업데이트.
+            </JobHistory>
+            <JobHistory>
+              사이트 디자인패턴 구축하여, 반응형, 시각화 및 톤앤매너 적용.
+            </JobHistory>
+            <JobHistory>
+              유저 유입, 나라별 통계 & 페이지 잔류시간의 통계를 위해 Google
+              Analytics 적용.
+            </JobHistory>
           </ul>
         </WorkDescBlock>
       </WorkExpBlock>
