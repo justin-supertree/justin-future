@@ -1,6 +1,9 @@
 import styled from "@emotion/styled";
 import Layout from "@/components/Layout";
 import { NextPageWithLayout } from "@/types/next-page";
+import Image from "next/image";
+import { MyThumbNail, MyThumbNail2 } from "@/images";
+import { useMedia } from "react-use";
 
 const Container = styled.div`
   display: flex;
@@ -184,12 +187,20 @@ const ContactBlock = styled.div`
 `;
 
 const ImageBlock = styled.div`
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   margin-right: 3rem;
   border-radius: 50%;
   background-color: lightcoral;
-  opacity: 0.7;
+  opacity: 0.9;
+  overflow: hidden;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -197,6 +208,13 @@ const ImageBlock = styled.div`
     border-radius: 8px;
     margin-right: 0;
     margin-bottom: 2rem;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+    }
   }
 `;
 
@@ -213,6 +231,8 @@ const ContactWrapper = styled.div`
 `;
 
 const HomePage: NextPageWithLayout = () => {
+  const isMobile = useMedia("max-width:768px", true);
+
   return (
     <>
       <Container>
@@ -241,7 +261,12 @@ const HomePage: NextPageWithLayout = () => {
                 </ContentsBlock>
               </ContactWrapper>
 
-              <ImageBlock />
+              <ImageBlock>
+                <Image
+                  src={!isMobile ? MyThumbNail2 : MyThumbNail}
+                  alt="my-thumbnail"
+                />
+              </ImageBlock>
             </ContactBlock>
 
             <Topic>Introduction</Topic>
