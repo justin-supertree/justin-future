@@ -12,6 +12,13 @@ const Container = styled.div`
   }
 `;
 
+const InnerWrapper = styled.div`
+  width: 100%;
+  max-width: 768px;
+  margin: 0;
+  text-align: center;
+`;
+
 const Title = styled.h1`
   margin: 0;
 
@@ -23,7 +30,9 @@ const Title = styled.h1`
 const Header = () => {
   return (
     <Container>
-      <Title>박우준(Justin Park)</Title>
+      <InnerWrapper>
+        <Title>박우준(Justin Park)</Title>
+      </InnerWrapper>
     </Container>
   );
 };
