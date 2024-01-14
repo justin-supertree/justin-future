@@ -18,8 +18,12 @@ const MainBlock = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 768px;
-  gap: 2rem;
+  gap: 4rem;
   padding-bottom: 30rem;
+
+  @media screen and (max-width: 768px) {
+    gap: 2rem;
+  }
 `;
 
 const Section = styled.section`
@@ -28,7 +32,6 @@ const Section = styled.section`
   justify-content: flex-start;
   flex-direction: column;
   width: 100%;
-  min-height: 20vh;
   gap: 2rem;
 
   @media screen and (max-width: 768px) {
@@ -73,16 +76,17 @@ const ContentsBlock = styled.div`
 `;
 
 const SkillsBlock = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min-content, 4fr));
-  gap: 1rem;
-  max-width: 768px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  gap: 0.5rem;
 `;
 
 const SkillItem = styled.div`
   width: fit-content;
   padding: 0.4rem;
-  border: 4px solid lightgreen;
+  border: 4px solid lightblue;
   border-radius: 12px;
   white-space: pre;
 `;
