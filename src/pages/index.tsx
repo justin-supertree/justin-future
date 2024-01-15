@@ -28,7 +28,7 @@ const MainBlock = styled.div`
   padding-bottom: 30rem;
 
   @media screen and (max-width: 768px) {
-    gap: 1.25rem;
+    gap: 1.725rem;
   }
 `;
 
@@ -41,7 +41,7 @@ const Section = styled.section`
   gap: 2rem;
 
   @media screen and (max-width: 768px) {
-    gap: 1rem;
+    gap: 1.725rem;
   }
 `;
 
