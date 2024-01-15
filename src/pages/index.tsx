@@ -28,7 +28,7 @@ const MainBlock = styled.div`
   padding-bottom: 30rem;
 
   @media screen and (max-width: 768px) {
-    gap: 2rem;
+    gap: 1.25rem;
   }
 `;
 
@@ -41,13 +41,18 @@ const Section = styled.section`
   gap: 2rem;
 
   @media screen and (max-width: 768px) {
-    gap: 1.6rem;
+    gap: 1rem;
   }
 `;
 
 const Topic = styled.h1`
   width: 100%;
   margin: 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
 `;
 
 const Title = styled.h2`
@@ -139,10 +144,19 @@ const ContentsText = styled.div`
   font-weight: 600;
   margin-bottom: 1rem;
   gap: 1rem;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0.725rem;
+  }
 `;
 
 const ContactTitle = styled.p`
   width: 100px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    font-weight: 700;
+  }
 `;
 
 const PersonalBlock = styled.div`
@@ -176,6 +190,10 @@ const IntroText = styled.p`
   font-weight: 500;
   line-height: 1.3;
   word-break: keep-all;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 const ContactBlock = styled.div`
@@ -230,6 +248,7 @@ const ContactWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    gap: 1rem;
   }
 `;
 
@@ -286,9 +305,7 @@ const HomePage: NextPageWithLayout = () => {
                 개발하는 것을 좋아합니다.
               </IntroText>
             </ContentsBlock>
-          </Section>
 
-          <Section>
             <Topic>Skills</Topic>
 
             <SkillsBlock>

@@ -10,7 +10,7 @@ const Section = styled.section`
   gap: 2rem;
 
   @media screen and (max-width: 768px) {
-    gap: 1.6rem;
+    gap: 1rem;
   }
 `;
 
@@ -44,7 +44,7 @@ const Title = styled.h2`
   margin: 0;
 
   @media screen and (max-width: 768px) {
-    font-size: 26px;
+    font-size: 22px;
     line-height: 1.5;
     word-break: keep-all;
   }
@@ -72,6 +72,10 @@ const WorkDescBlock = styled.div`
     padding-top: 1rem;
     padding-left: 0;
     border-left: 0;
+
+    & > ul {
+      padding-left: 1.725rem;
+    }
   }
 `;
 
@@ -117,6 +121,7 @@ const SubTitle = styled.p`
 
   @media screen and (max-width: 768px) {
     width: fit-content;
+    font-size: 22px;
     border-bottom: 5px solid red;
   }
 `;
@@ -138,7 +143,7 @@ const Section1 = () => {
         </BorderDownBlock>
         <BorderDownBlock>
           <p>Department</p>
-          <p>Members PlayDapp Front-End</p>
+          <p>Members Front-End</p>
         </BorderDownBlock>
       </PersonalBlock>
 
@@ -186,7 +191,6 @@ const Section1 = () => {
       <WorkExpBlock>
         <WorkBlock>
           <SubTitle>NFT 마켓 드롭스</SubTitle>
-          <p>(2022.08 - 2022.08)</p>
         </WorkBlock>
 
         <WorkDescBlock>
@@ -217,7 +221,6 @@ const Section1 = () => {
       <WorkExpBlock>
         <WorkBlock>
           <SubTitle>NFT 마켓 리뉴얼</SubTitle>
-          <p>(2022.04 - 2022.06)</p>
         </WorkBlock>
 
         <WorkDescBlock>
@@ -243,6 +246,10 @@ const Section1 = () => {
             </JobHistory>
             <JobHistory>
               web3, Ethers, Next js version 기술스택을 최신상태로 업데이트.
+            </JobHistory>
+            <JobHistory>
+              Redux-tookit을 통한 필터링 및 헤더 그리고 구매, 판매 상태
+              전역관리.
             </JobHistory>
             <JobHistory>
               사이트 디자인패턴 구축하여, 반응형, 시각화 및 톤앤매너 적용.
@@ -279,7 +286,7 @@ const Section1 = () => {
             </JobHistory>
             <JobHistory>emotion Js를 활용한 사이트 디자인 구현</JobHistory>
             <JobHistory>
-              react-auery & axios를 활용한 사전예약 버튼 기능 구현
+              react-query & axios를 활용한 사전예약 버튼 기능 구현
             </JobHistory>
             <JobHistory>
               웹, 테블릿, 모바일 별, 시각화 및 디자인 반응형 적용
