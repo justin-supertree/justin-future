@@ -50,7 +50,7 @@ const Topic = styled.h1`
   margin: 0;
 
   @media screen and (max-width: 768px) {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 800;
   }
 `;
