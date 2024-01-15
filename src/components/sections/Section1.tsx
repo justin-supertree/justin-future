@@ -173,6 +173,9 @@ const Section1 = () => {
             </JobHistory>
             <JobHistory>react-auth를 활용한 Sign 기능 구현</JobHistory>
             <JobHistory>
+              Build 및 성능 개선을 위해 Code Splitting(Dynamic Import) 적용.
+            </JobHistory>
+            <JobHistory>
               Chart.Js를 활용한 유저유입 및 transaction 트레킹 Chart구현
             </JobHistory>
             <JobHistory>
@@ -180,9 +183,6 @@ const Section1 = () => {
             </JobHistory>
             <JobHistory>
               Status별 스타일을 위해 Color Mapping Function 적용.
-            </JobHistory>
-            <JobHistory>
-              Build 및 성능 개선을 위해 Code Splitting(Dynamic Import) 적용.
             </JobHistory>
           </ul>
         </WorkDescBlock>
@@ -248,8 +248,8 @@ const Section1 = () => {
               web3, Ethers, Next js version 기술스택을 최신상태로 업데이트.
             </JobHistory>
             <JobHistory>
-              Redux-tookit을 통한 필터링 및 헤더 그리고 구매, 판매 상태
-              전역관리.
+              Redux-toolkit을 활용한 페이지별 필터링 및 헤더 그리고 구매, 판매
+              상태 전역관리.
             </JobHistory>
             <JobHistory>
               사이트 디자인패턴 구축하여, 반응형, 시각화 및 톤앤매너 적용.
